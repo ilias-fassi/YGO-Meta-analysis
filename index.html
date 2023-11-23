@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGO META TABLO</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <!-- TITRE -->
+    <div id="title">YGO META ANALYSIS</div>
+
+    <div class="main_container">
+
+        <!-- DECK CONTAINER -->
+        <div>
+            <legend>DECKS</legend>
+            <div class="deck_container">
+                <img src="img/Decks/purrely.jpg" class="deck" draggable="true" alt="purrely" width="90px">
+                <img src="img/Decks/unchained.jpg" class="deck" draggable="true" alt="unchained" width="90px">
+                <img src="img/Decks/labrynth.jpg" class="deck" draggable="true" alt="labrynth" width="90px">
+                <img src="img/Decks/dragon link.jpg" class="deck" draggable="true" alt="dragon link" width="90px">
+                <img src="img/Decks/branded.jpg" class="deck" draggable="true" alt="branded" width="90px">
+                <img src="img/Decks/chimera.jpg" class="deck" draggable="true" alt="chimera" width="90px">
+                <img src="img/Decks/infernoble.jpg" class="deck" draggable="true" alt="infernoble" width="90px">
+                <img src="img/Decks/rescue-ace.jpg" class="deck" draggable="true" alt="rescue-ace" width="90px">
+                <img src="img/Decks/rikka.jpg" class="deck" draggable="true" alt="rikka" width="90px">
+                <img src="img/Decks/tear.jpg" class="deck" draggable="true" alt="tear" width="90px">
+                <img src="img/Decks/flunder.jpg" class="deck" draggable="true" alt="flunder" width="90px">
+                <img src="img/Decks/mannadium.jpg" class="deck" draggable="true" alt="mannadium" width="90px">
+            </div>
+        </div>
+
+        <!-- GRID & LEGEND -->
+        <div class="wrapper">
+            <div class="grid" id="grid">
+                <div id="case_1-1">
+                    <img src="img/other/corner_tab.png" alt="CARDS DECKS" width="90px" draggable="false">
+                </div>
+                
+                <div class="card_case"></div>
+                <div class="card_case"></div>
+                <div class="card_case"></div>
+                <div class="card_case"></div>
+                <div class="card_case"></div>
+                <div class="add_card" id="add_card" onclick="add_col();">
+                    <img src="img/other/Logo-plus-white.png" width="90px" draggable="false">
+                </div>
+
+                <div class="deck_case"></div>
+                <div class="deck_case"></div>
+                <div class="deck_case"></div>
+                <div class="deck_case"></div>
+                <div class="deck_case"></div>
+                <div class="add_deck" id="add_deck" onclick="add_row();">
+                    <img src="img/other/Logo-plus-white.png" width="90px" draggable="false">
+                </div>
+
+                <div id="case_2-2" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_2-3" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_2-4" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_2-5" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_2-6" class="colored_case" onclick="change_color(this.id);"></div>
+
+                <div id="case_3-2" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_3-3" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_3-4" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_3-5" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_3-6" class="colored_case" onclick="change_color(this.id);"></div>
+
+                <div id="case_4-2" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_4-3" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_4-4" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_4-5" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_4-6" class="colored_case" onclick="change_color(this.id);"></div>
+
+                <div id="case_5-2" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_5-3" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_5-4" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_5-5" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_5-6" class="colored_case" onclick="change_color(this.id);"></div>
+
+                <div id="case_6-2" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_6-3" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_6-4" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_6-5" class="colored_case" onclick="change_color(this.id);"></div>
+                <div id="case_6-6" class="colored_case" onclick="change_color(this.id);"></div>
+            </div>
+
+            <!-- CUSTOM LEGEND -->
+            <div class="legend">
+                <div>
+                    <div class="green">
+                        <div></div>
+                        <input type="text" placeholder="IMPACTFUL">
+                    </div>
+                    <div class="yellow">
+                        <div></div>
+                        <input type="text" placeholder="GOOD">
+                    </div>
+                </div>
+                <div>
+                    <div class="orange">
+                        <div></div>
+                        <input type="text" placeholder="MEDIOCRE">
+                    </div>
+                    <div class="red">
+                        <div></div>
+                        <input type="text" placeholder="BAD">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HT/POWERCARDS CONTAINER -->
+        <div>
+            <legend>HANDTRAPS</legend>
+            <div class="ht_container">
+                <!-- <div class="add_area">
+                    <img class="white_plus" src="img/other/Logo-plus-white.png" width="150px">
+                </div> -->
+                <img src="img/Handtraps/ash.jpg" class="ht" draggable="true" alt="ash" width="90px">
+                <img src="img/Handtraps/droll.jpg" class="ht" draggable="true" alt="droll" width="90px">
+                <img src="img/Handtraps/veiler.jpg" class="ht" draggable="true" alt="veiler" width="90px">
+                <img src="img/Handtraps/imperm.jpg" class="ht" draggable="true" alt="imperm" width="90px">
+                <img src="img/Handtraps/nibiru.jpg" class="ht" draggable="true" alt="nibiru" width="90px">
+                <img src="img/Handtraps/crow.jpg" class="ht" draggable="true" alt="crow" width="90px">
+                <img src="img/Handtraps/druis.jpg" class="ht" draggable="true" alt="druis" width="90px">
+                <img src="img/Handtraps/shifter.jpg" class="ht" draggable="true" alt="druis" width="90px">
+            </div>
+            
+            <legend>POWERCARDS</legend>
+            <div class="powercards_container">
+                <img src="img/Powercards/lava golem.jpg" class="powercard" draggable="true" alt="lava golem" width="90px">
+                <img src="img/Powercards/fenrir.jpg" class="powercard" draggable="true" alt="fenrir" width="90px">
+                <img src="img/Powercards/pankra.jpg" class="powercard" draggable="true" alt="pankra" width="90px">
+                <img src="img/Powercards/evenly.jpg" class="powercard" draggable="true" alt="evenly" width="90px">
+                <img src="img/Powercards/ls.jpg" class="powercard" draggable="true" alt="ls" width="90px">
+                <img src="img/Powercards/cyclone.jpg" class="powercard" draggable="true" alt="cyclone" width="90px">
+                <img src="img/Powercards/drnm.jpg" class="powercard" draggable="true" alt="dark ruler no more" width="90px">
+                <img src="img/Powercards/ttt.jpg" class="powercard" draggable="true" alt="TTT" width="90px">
+                <img src="img/Powercards/eclipse.jpg" class="powercard" draggable="true" alt="book of eclipse" width="90px">
+                <img src="img/Powercards/moon.jpg" class="powercard" draggable="true" alt="book of moon" width="90px">
+                <img src="img/Powercards/econ.jpg" class="powercard" draggable="true" alt="enemy controler" width="90px">
+                <img src="img/Powercards/spellbound.jpg" class="powercard" draggable="true" alt="spellbound" width="90px">
+                <img src="img/Powercards/droplet.jpg" class="powercard" draggable="true" alt="droplet" width="90px">
+                <img src="img/Powercards/cbtg.jpg" class="powercard" draggable="true" alt="cbtg" width="90px">
+                <img src="img/Powercards/feather.jpg" class="powercard" draggable="true" alt="feather" width="90px">
+                <img src="img/Powercards/heart.jpg" class="powercard" draggable="true" alt="heart" width="90px">
+            </div>
+        </div>
+    </div>
+
+<script>
+    const icons = document.querySelectorAll(".deck, .ht, .powercard");
+    const boxes = document.querySelectorAll(".deck_case, .card_case, .deck_container, .ht_container, .powercards_container");
+    const containers_boxes = document.querySelectorAll(".deck_container, .ht_container, .powercards_container");
+    let beingDragged;
+
+    icons.forEach(icon => {
+        addEventListener('dragstart', dragStart)
+    })
+    boxes.forEach(box => {
+        box.addEventListener('dragover', dragOver)
+        box.addEventListener('drop', dragDrop)
+    })
+
+    function dragStart(e){
+        beingDragged = e.target;
+    }
+    function dragOver(e){
+        // if (e.target.className = 'deck_container'| 'ht_container'| 'powercards_container'){
+        //     this.style.visibility = "hidden";
+            // X.style.visibility = "on";
+        // }
+        e.preventDefault();
+    }
+    function dragDrop(e){
+        // if (e.target.className != 'deck'|'ht'|'powercard'){ // if box != icon, drop
+            e.target.append(beingDragged);
+        // }
+        // else {
+        //     // if box = icon, no drop & add back to container
+        //     if (e.target.className = 'deck') document.getElementsByClassName('deck_container').append(beingDragged);
+        //     if (e.target.className = 'ht') document.getElementsByClassName('ht_container').append(beingDragged);
+        //     if (e.target.className = 'powercard') document.getElementsByClassName('powercard_container').append(beingDragged);
+        // }
+        // // si carte, not append & go back 
+        // // go back : si deck doc.deck_cont.append being dragged
+        // // si ht ou pwr etc..
+    }
+</script>
+
+</body>
+</html>
