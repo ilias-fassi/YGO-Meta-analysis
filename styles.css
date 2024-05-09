@@ -7,6 +7,38 @@ body{
     justify-content: center;
 }
 
+#zoom_out{
+    position: fixed;
+    top: 10px;
+    right: 65px;
+}
+#zoom_out:hover{
+    cursor:pointer;
+    -webkit-filter: drop-shadow(2px 2px white);
+    filter: drop-shadow(2px 2px white);
+}
+#zoom_out:active{
+    width: 52px;
+}
+
+#zoom_in{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#zoom_in:hover{
+    cursor:pointer;
+    -webkit-filter: drop-shadow(2px 2px white);
+    filter: drop-shadow(2px 2px white);
+}
+#zoom_in:active{
+    width: 52px;
+}
+
+.zoom_button{
+    opacity: 90%;
+}
+
 #title {
     display: flex;
     align-items: center;
@@ -19,11 +51,11 @@ body{
     font-weight: bold;
 }
 
-.main_container {
+#main_container {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* zoom: 91%; */
+    zoom: 90%;
 }
 
 /* GRID STRUCTURE */

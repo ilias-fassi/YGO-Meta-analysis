@@ -117,3 +117,15 @@ function add_row(){
     // reactivate events
     turn_on_events();
 }
+
+let curr_zoom = 90
+
+function zoom (str){
+    if (str == 'out'){
+        curr_zoom-=10;
+    }
+    else if (str == 'in'){
+        curr_zoom+=10;
+    }
+    document.getElementById("main_container").style.zoom = curr_zoom + '%';
+}
